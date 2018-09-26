@@ -1,0 +1,193 @@
+/* 公共变量 */
+/* 样式重置 */
+* {
+  margin: 0px;
+  padding: 0px;
+  /*在移动端设置盒模型border-box 为了防止元素加边框或者padding出现水平滚动条*/
+  box-sizing: border-box;
+  /* 去除移动端按住元素的时候会出现高亮背景色 */
+  -webkit-tap-highlight-color: transparent;
+  /* 去掉所有移动端内边框 */
+  outline: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+}
+img {
+  /* 解决图片底部3px的间隙 为了让图片的对齐方式和文本一致*/
+  vertical-align: middle;
+}
+i {
+  font-style: normal;
+}
+/* 公共样式 */
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url(../images/sprites.png);
+  background-size: 200px 200px;
+}
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  background-color: #fff;
+  z-index: 888;
+}
+#footer > ul {
+  display: flex;
+}
+#footer > ul > li {
+  width: 25%;
+}
+#footer > ul > li > a {
+  display: block;
+  text-align: center;
+}
+#footer > ul > li > a > img {
+  width: 65px;
+  height: 50px;
+}
+#header {
+  width: 100%;
+  display: flex;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0px;
+}
+#header .icon-back {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-position: -20px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header > form {
+  flex: 1;
+  padding-top: 5px;
+  position: relative;
+}
+#header > form .icon-search {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  background-position: -60px -108px;
+}
+#header > form > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+#header .icon-list {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/sprites.png);
+  background-position: -60px 0;
+  padding: 10px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#main {
+  padding: 40px 0 50px;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+#main .left {
+  width: 86px;
+  height: 100%;
+  overflow: hidden;
+}
+#main .left .swiper-container {
+  height: 100%;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide .box {
+  height: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  width: 86px;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide .box > li {
+  width: 86px;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide .box > li.active {
+  background-color: #fff;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide .box > li.active > a {
+  color: red;
+}
+#main .left .swiper-container .swiper-wrapper .swiper-slide .box > li > a {
+  display: block;
+  width: 86px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+}
+#main .rightbox {
+  flex: 1;
+}
+#main .rightbox .swiper-container {
+  height: 100%;
+}
+#main .rightbox .swiper-container .swiper-slide {
+  height: auto;
+}
+#main .rightbox .swiper-container .swiper-slide .right {
+  height: 100%;
+  overflow: hidden;
+}
+#main .rightbox .swiper-container .swiper-slide .right .hot {
+  height: 30px;
+  line-height: 30px;
+}
+#main .rightbox .swiper-container .swiper-slide .right .hot > h4 {
+  font-size: 14px;
+}
+#main .rightbox .swiper-container .swiper-slide .right > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#main .rightbox .swiper-container .swiper-slide .right > ul > li {
+  width: 33.33%;
+  margin: 5px 0;
+}
+#main .rightbox .swiper-container .swiper-slide .right > ul > li > a {
+  display: block;
+  text-align: center;
+}
+#main .rightbox .swiper-container .swiper-slide .right > ul > li > a > span {
+  font-size: 12px;
+}
+#main .rightbox .swiper-container .swiper-slide .right > ul > li > a > img {
+  width: 100%;
+}
